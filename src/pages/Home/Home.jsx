@@ -34,9 +34,9 @@ const Home = () => {
         return; 
     }
     
-    const specialCharRegex = /^[A-Za-z0-9\s]*$/;
+    const specialCharRegex = /^[A-Za-z0-9\s-]*$/;
     if (!specialCharRegex.test(input)) {
-        alert("Please avoid special characters.");
+        alert("Please avoid special characters except hyphen (-).");
         return; 
     }
 

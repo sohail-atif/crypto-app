@@ -54,24 +54,34 @@
     width: 13px;
 }
 
-@media (max-width: 900px){
-    .navbar{
-        padding: 20px 8%;
+@media (max-width: 1200px) {
+    .navbar ul {
+      padding-right: 50px;
     }
-    .navbar button{
-        gap: 8px;
-        padding: 8px 18px;
-        font-size: 14px;
+  }
+  
+  @media (max-width: 900px) {
+    .navbar {
+      padding: 20px 5%;
     }
-}
-@media (max-width: 768px){
-    .navbar{
-        padding: 20px 5%;
+    .navbar ul {
+      padding-right: 20px;
     }
-    .navbar ul{
-        display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      display: none;
     }
-    .navbar button img{
-        width: 12px;
+    .navbar button img {
+      width: 12px;
     }
-}
+  }
+  
+  @media (max-width: 500px) {
+    .navbar button {
+      gap: 8px;
+      padding: 8px 18px;
+      font-size: 14px;
+    }
+  }
